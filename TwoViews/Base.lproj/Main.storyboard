@@ -1,24 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TwoViews" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JWK-Xb-u05">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="med-46-VCc">
+                                <rect key="frame" x="20" y="463" width="374" height="379"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RNa-xu-CYn">
+                                <rect key="frame" x="20" y="64" width="374" height="379"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="bEc-ze-JVy"/>
+                        <color key="backgroundColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="med-46-VCc" firstAttribute="top" secondItem="RNa-xu-CYn" secondAttribute="bottom" constant="20" id="7YU-Ul-zGd"/>
+                            <constraint firstItem="RNa-xu-CYn" firstAttribute="top" secondItem="bEc-ze-JVy" secondAttribute="top" constant="20" id="BKm-KT-3bA"/>
+                            <constraint firstItem="med-46-VCc" firstAttribute="height" secondItem="RNa-xu-CYn" secondAttribute="height" id="NBe-gH-1BM"/>
+                            <constraint firstItem="RNa-xu-CYn" firstAttribute="leading" secondItem="bEc-ze-JVy" secondAttribute="leading" constant="20" id="VKZ-3p-2iJ"/>
+                            <constraint firstItem="bEc-ze-JVy" firstAttribute="bottom" secondItem="med-46-VCc" secondAttribute="bottom" constant="20" id="YQ4-f3-Hk1"/>
+                            <constraint firstItem="med-46-VCc" firstAttribute="leading" secondItem="bEc-ze-JVy" secondAttribute="leading" constant="20" id="mdq-Jl-FdS"/>
+                            <constraint firstItem="bEc-ze-JVy" firstAttribute="trailing" secondItem="med-46-VCc" secondAttribute="trailing" constant="20" id="pwY-i1-Gmr"/>
+                            <constraint firstItem="bEc-ze-JVy" firstAttribute="trailing" secondItem="RNa-xu-CYn" secondAttribute="trailing" constant="20" id="wt1-ih-pes"/>
+                            <constraint firstItem="med-46-VCc" firstAttribute="top" secondItem="RNa-xu-CYn" secondAttribute="bottom" constant="20" id="yds-Wc-JT4"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="83.705357142857139"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="secondarySystemGroupedBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
